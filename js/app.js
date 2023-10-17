@@ -24,6 +24,22 @@ function getRandomInt(min, max) {
 }
 
 
+setTimeout(wait, 3000);
+
+function wait() {
+
+    let getNumbers = []
+
+    for (let i = 0; i < 5; i++) {
+
+    const typeNumbers = prompt('Inserisci i numeri');
+    getNumbers.push(typeNumbers) ;
+
+    }
+    console.log(getNumbers);
+}
+
+
 
 
 
