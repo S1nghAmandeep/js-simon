@@ -1,7 +1,7 @@
 
 const randomNumber = getNumberForArray(1, 100, 5);
 console.log(randomNumber)
-alert('ricorda questi numeri ' + randomNumber + '. Dopo aver cliccato su ok aspetta 3 secondi')
+alert('ricorda questi numeri ' + randomNumber + '. Dopo aver cliccato su ok aspetta 30 secondi')
 
 function getNumberForArray (randomMin, randomMax, totalNumber) {
 
@@ -24,7 +24,7 @@ function getRandomInt(min, max) {
 }
 
 
-setTimeout(wait, 3000);
+setTimeout(wait, 30000);
 
 function wait() {
 
