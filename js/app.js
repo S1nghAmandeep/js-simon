@@ -28,16 +28,32 @@ setTimeout(wait, 3000);
 
 function wait() {
 
-    let getNumbers = []
+    // chiedere i numeri al utente
+
+    let score = 0;
+
+    const getNumbers = [];
+    const numbersGuessed = [];
 
     for (let i = 0; i < 5; i++) {
 
-    const typeNumbers = prompt('Inserisci i numeri');
+    const typeNumbers = parseInt(prompt('Inserisci i numeri'));
     getNumbers.push(typeNumbers) ;
 
+    if (randomNumber.includes(typeNumbers) &&
+        !numbersGuessed.includes(typeNumbers)) {
+
+        numbersGuessed.push(typeNumbers)
+        score++
     }
-    console.log(getNumbers);
+
+    }
+    console.log(getNumbers, numbersGuessed);
+
+    alert(`hai indovinato numero ${numbersGuessed} e il tuo score è ${score}`);
 }
+
+
 
 
 
